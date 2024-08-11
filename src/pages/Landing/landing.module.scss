@@ -1,5 +1,16 @@
 @import '../../styles';
 
+.button {
+  display: block;
+  width: 130px;
+  height: 48px;
+  border-radius: 24px;
+  background-color: #f9c06a;
+  border: 1px solid #f9c06a;
+  @include text($primary-white, 300, 16px, Playfair Display);
+  color: #1e1e1e;
+}
+
 .landingBgr {
   @include preview-img(url(./assets/landing.png), 100%, 100%, cover);
   background-position: center;
@@ -16,17 +27,6 @@
     p {
       @include text($primary-white, 300, 22px, Playfair Display);
       max-width: 527px;
-    }
-
-    button {
-      display: block;
-      width: 130px;
-      height: 48px;
-      border-radius: 24px;
-      background-color: #f9c06a;
-      border: 1px solid #f9c06a;
-      @include text($primary-white, 300, 16px, Playfair Display);
-      color: #1e1e1e;
     }
   }
 }
@@ -50,17 +50,6 @@
   img {
     mix-blend-mode: multiply;
   }
-
-  button {
-    display: block;
-    width: 130px;
-    height: 48px;
-    border-radius: 24px;
-    background-color: #f9c06a;
-    border: 1px solid #f9c06a;
-    @include text($primary-white, 300, 16px, Playfair Display);
-    color: #1e1e1e;
-  }
 }
 
 .menu {
@@ -83,6 +72,47 @@
       background-color: #fff9f1;
       border: 1px solid #f9c06a;
       max-width: 280px;
+
+      .itemsSize {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+      }
+
+      .count_button {
+        width: 81px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border: 1px solid #403F3D;
+        background-color: #FFF;
+        border-radius: 100px;
+        padding: 8px 16px 8px 8px;
+
+        .size {
+          width: 30px;
+          height: 30px;
+        }
+
+        &:hover {
+          transform: scale(1.1);
+          box-shadow: 5px 5px 10px #403f3dd0;
+          border: 1px solid #403F3D;
+          background-color: #403F3D;
+          border-radius: 100px;
+          padding: 8px 16px 8px 8px;
+
+          & .count {
+            color: #FFF;
+          }
+
+          & .size {
+            background-color: #FFF;
+            color: #403F3D;
+            border-radius: 100px;
+          }
+        }
+      }
     }
 
     .itemInfo {
@@ -95,19 +125,6 @@
 
       h3 {
         @include text(#603809, 700, 26px, Playfair Display);
-      }
-
-      button {
-        position: absolute;
-        top: 84%;
-        display: block;
-        width: 130px;
-        height: 48px;
-        border-radius: 24px;
-        background-color: #f9c06a;
-        border: 1px solid #f9c06a;
-        @include text($primary-white, 300, 16px, Playfair Display);
-        color: #1e1e1e;
       }
     }
   }
@@ -157,19 +174,6 @@
       h3 {
         @include text(#603809, 700, 26px, Playfair Display);
       }
-
-      button {
-        position: absolute;
-        top: 84%;
-        display: block;
-        width: 130px;
-        height: 48px;
-        border-radius: 24px;
-        background-color: #f9c06a;
-        border: 1px solid #f9c06a;
-        @include text($primary-white, 300, 16px, Playfair Display);
-        color: #1e1e1e;
-      }
     }
   }
 }
@@ -193,17 +197,6 @@
 
     p {
       @include text($primary-white, 300, 22px, Playfair Display);
-    }
-
-    button {
-      display: block;
-      width: 130px;
-      height: 48px;
-      border-radius: 24px;
-      background-color: #f9c06a;
-      border: 1px solid #f9c06a;
-      @include text($primary-white, 300, 16px, Playfair Display);
-      color: #1e1e1e;
     }
   }
 }

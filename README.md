@@ -1,8 +1,13 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Сделать адаптивную верстку для планшетов и мобильных устройств.
+2. Реализовать слайдер в секции "Our Coffee Perfection Feedback", позволяющий переключать 5 комментариев по нажатию на стрелочки. Комментарии должны последовательно заменяться друг другом.
+3. В шапке (header) сайта есть ссылки: Home, Menu, About Us, Contact Us. По нажатию на Home должно происходить плавное перенаправление на секцию "Discover the Best Coffee". По клику на Menu — переход на "Enjoy a New Blend of Coffee Style", по About Us — на секцию "Why Are We Different?", а по Contact Us — на футер.
+4. При нажатии на кнопку "Order Now" в секции "Enjoy a New Blend of Coffee Style" должно открываться модальное окно. Оно должно закрываться не только по нажатию на крестик, но и при клике на затемненную область вне окна.
+5. Во время открытия модального окна "Order Now" в секции "Enjoy a New Blend of Coffee Style" необходимо заблокировать прокрутку основной страницы.
+6. В компоненте CoffeeItem.jsx устранить дублирование кода в строках 32-52.
+7. Модальное окно: выбор размера порции (1s, 2s, 3s, 4s). Чем больше порция, тем выше итоговая цена (total price):  
+1s — текущая цена (price),  
+2s — текущая цена * 1.5,  
+3s — текущая цена * 2.0,  
+4s — текущая цена * 2.5.  

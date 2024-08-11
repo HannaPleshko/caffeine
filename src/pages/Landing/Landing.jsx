@@ -41,7 +41,7 @@ function Landing() {
             It is best to start your day with a cup of coffee. Discover the best flavours coffee you will ever have. We provide the best for our
             customers.
           </p>
-          <button>Order Now</button>
+          <button className={style.button}>Order Now</button>
         </div>
       </div>
 
@@ -53,7 +53,7 @@ function Landing() {
             cup of coffee is good, but having a cup of real coffee is greater. There is no doubt that you will enjoy this coffee more than others you
             have ever tasted.
           </p>
-          <button>Order Now</button>
+          <button className={style.button}>Order Now</button>
         </div>
         <div>
           <img src={coffee} alt="coffee" />
@@ -87,7 +87,7 @@ function Landing() {
           <div className={style.content}>
             <h2>Get a chance to have an Amazing morning</h2>
             <p>We are giving you are one time opportunity to experience a better life with coffee.</p>
-            <button>Order Now</button>
+            <button className={style.button}>Order Now</button>
           </div>
 
           <img src={cup} alt="cup" />
